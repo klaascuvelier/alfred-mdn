@@ -28,5 +28,10 @@
   "license": "MIT",
   "dependencies": {
     "alfy": "^0.6.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ]
 }
