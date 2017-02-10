@@ -1,23 +1,22 @@
 "use strict";
+
 const alfy = require("alfy");
 const mdnBase = "https://developer.mozilla.org/en-US/search"
 
-alfy.fetch(`${mdnBase}.json?q={alfy.input}`, { transform })
+alfy.fetch(`${mdnBase}.json?q=${alfy.input}`, { transform })
     .then(result => {
-        const items = alfy
-            .inputMatches(result, 'title')
-            .map(x => {
+        const items = result.map(x => {
                 return {
                     title: x.title,
                     autoComplete: x.title,
-                    subtitle: x.excerpt
+                    subtitle: x.excerpt,
                     arg: x.url,
                     quicklookurl: x.url
                 }
             });
 
         // No results
-        if (results.length === 0) {
+        if (items.length === 0 && false) {
             const url = `${mdnBase}?q=${alfy.input}`;
 
             items.push({
@@ -26,6 +25,8 @@ alfy.fetch(`${mdnBase}.json?q={alfy.input}`, { transform })
                 quicklookurl: url
             });
         }
+
+        alfy.output(items);
     });
 
 function transform(body) {
