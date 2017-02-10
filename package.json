@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Search through the MDN documentation",
   "main": "index.js",
+  "repository": "klaascuvelier/alfred-mdn",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "alfy-init",
