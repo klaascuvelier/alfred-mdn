@@ -1,7 +1,7 @@
 # alfred-mdn
 > Search through the MDN documentation
 
-<img src="screenshot.png" width="694">
+![screenshot](screenshot.png)
 
 
 ## Install
