@@ -1,6 +1,6 @@
 {
   "name": "alfred-mdn",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Search through the MDN documentation",
   "main": "index.js",
   "repository": "klaascuvelier/alfred-mdn",
@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "alfy": "^0.6.0"
+    "alfy": "0.9.1"
   },
   "files": [
     "index.js",
@@ -35,6 +35,6 @@
     "info.plist"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   }
 }
