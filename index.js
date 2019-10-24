@@ -6,7 +6,7 @@ const mdnBase = "https://wiki.developer.mozilla.org/en-US/search.json";
 
 alfy.fetch(`${mdnBase}?q=${alfy.input}`, { transform })
     .then(results => {
-        const items = results.map(result => {
+        const items = (results || []).map(result => {
             const {title, excerpt, url} = result;
             const subtitle = stripHtml(excerpt);
 
