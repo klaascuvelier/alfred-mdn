@@ -1,8 +1,7 @@
 "use strict";
 
 const alfy = require("alfy");
-// const mdnBase = "https://developer.mozilla.org/en-US/search.json" -- url currently broken, see: https://twitter.com/mozdevnet/status/1182208366887739392?s=12
-const mdnBase = "https://wiki.developer.mozilla.org/en-US/search.json";
+const mdnBase = "https://wiki.developer.mozilla.org/api/v1/search/en-US";
 
 alfy.fetch(`${mdnBase}?q=${alfy.input}`, { transform })
     .then(results => {
