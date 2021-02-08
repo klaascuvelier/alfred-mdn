@@ -6,7 +6,10 @@ const mdnBase = "https://wiki.developer.mozilla.org/api/v1/search/en-US";
 alfy.fetch(`${mdnBase}?q=${alfy.input}`, { transform }).then((results) => {
   const items = (results || []).map((result) => {
     const { title, highlight, slug } = result;
-    const excerpt = highlight && highlight.body && highlight.body.length > $;
+    const excerpt =
+      highlight && highlight.body && highlight.body.length > 0
+        ? highlight.body[0]
+        : "";
     const subtitle = stripHtml(excerpt);
 
     return {
