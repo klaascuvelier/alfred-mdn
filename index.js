@@ -13,7 +13,7 @@ https: alfy
           ? highlight.body[0]
           : "";
       const subtitle = stripHtml(excerpt);
-      const url = `${mdnDoc}${mdn_url}`;
+      const url = `${mdnDocBase}${mdn_url}`;
 
       return {
         title,
