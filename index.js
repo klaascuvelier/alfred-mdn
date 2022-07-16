@@ -4,7 +4,7 @@ const alfy = require("alfy");
 const mdnDocBase = "https://developer.mozilla.org";
 
 https: alfy
-  .fetch(`${mdnDocBase}/api/v1/search/en-US?q=${alfy.input}`, { transform })
+  .fetch(`${mdnDocBase}/api/v1/search?q=${alfy.input}`, { transform })
   .then((results) => {
     const items = (results || []).map((result) => {
       const { title, highlight, mdn_url } = result;
