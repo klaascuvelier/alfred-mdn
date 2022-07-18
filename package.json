@@ -1,6 +1,6 @@
 {
   "name": "alfred-mdn",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "Search through the MDN documentation",
   "main": "index.js",
   "repository": "klaascuvelier/alfred-mdn",
