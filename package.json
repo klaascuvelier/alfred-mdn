@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "alfy": "0.9.1"
+    "alfy": "1.1.0"
   },
   "files": [
     "index.js",
